@@ -38,6 +38,9 @@
 .extra-pages input { width: 100%; border: 1px solid #bdcabb; background: var(--white); color: var(--ink); padding: 12px 14px; border-radius: 6px; }
 .extra-pages .faq-section label[for="faq-search"] { padding: 10px 14px; margin-bottom: 0; background: #e8f1d5; border: 1px solid #bdcabb; border-bottom: 0; border-radius: 6px 6px 0 0; }
 .extra-pages .faq-section input[type="search"] { padding: 14px 16px; border-radius: 0 0 6px 6px; }
+.extra-pages .faq-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 10px; }
+.extra-pages .faq-filters button { padding: 7px 12px; border: 1px solid var(--line); border-radius: 4px; background: transparent; color: var(--ink); font-size: 12px; }
+.extra-pages .faq-filters button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: white; }
 .extra-pages input:focus-visible { outline: 3px solid #678a37; outline-offset: 3px; }
 .extra-pages details { border-bottom: 1px solid var(--line); padding: 22px 0; }
 .extra-pages summary { cursor: pointer; font-size: 18px; font-weight: 700; }
