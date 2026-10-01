@@ -15,4 +15,12 @@
         <servlet-name>health</servlet-name>
         <url-pattern>/health</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>contact</servlet-name>
+        <servlet-class>com.brightstart.ContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contact</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
 </web-app>

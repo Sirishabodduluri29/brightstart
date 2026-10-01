@@ -1,0 +1,16 @@
+﻿<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="<%= request.getContextPath() %>/index.jsp" aria-label="BrightStart home"><span class="brand-symbol" aria-hidden="true">&#10038;</span> BrightStart<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">&#9776;</span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="<%= request.getContextPath() %>/index.jsp" <%= "home".equals(request.getAttribute("activePage")) ? "aria-current=\"page\"" : "" %>>Home</a>
+      <a href="<%= request.getContextPath() %>/about.jsp" <%= "about".equals(request.getAttribute("activePage")) ? "aria-current=\"page\"" : "" %>>About us</a>
+      <% String[] extraFiles = {"services", "work", "pricing", "faq"}; String[] extraLabels = {"Services", "Work", "Pricing", "FAQ"}; for (int i = 0; i < extraFiles.length; i++) { %>
+      <a href="<%= request.getContextPath() %>/<%= extraFiles[i] %>.jsp" <%= extraFiles[i].equals(request.getAttribute("activePage")) ? "aria-current=\"page\"" : "" %>><%= extraLabels[i] %></a>
+      <% } %>
+      <a href="<%= request.getContextPath() %>/contact.jsp" <%= "contact".equals(request.getAttribute("activePage")) ? "aria-current=\"page\"" : "" %>>Contact</a>
+      <a class="button button-small" href="<%= request.getContextPath() %>/contact.jsp#contact-form">Let's talk <span aria-hidden="true">&#8599;</span></a>
+    </nav>
+  </div>
+</header>

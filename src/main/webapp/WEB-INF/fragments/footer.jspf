@@ -1,0 +1,10 @@
+﻿<footer class="site-footer">
+  <div class="container footer-main">
+    <div><a class="brand" href="<%= request.getContextPath() %>/index.jsp"><span class="brand-symbol" aria-hidden="true">&#10038;</span> BrightStart.</a><p>Thoughtful websites.<br>Brighter beginnings.</p></div>
+    <div><span class="footer-label">EXPLORE</span><a href="<%= request.getContextPath() %>/index.jsp">Home</a><a href="<%= request.getContextPath() %>/about.jsp">Our story</a><a href="<%= request.getContextPath() %>/contact.jsp">Get in touch</a></div>
+    <div><span class="footer-label">SAY HELLO</span><a href="mailto:hello@example.com">hello@example.com &#8599;</a><p class="small">Demo studio &middot; Placeholder email</p></div>
+  </div>
+  <div class="container footer-bottom"><span>&copy; <%= java.time.Year.now() %> BrightStart. A demo creative studio.</span><span>Built with care <span aria-hidden="true">&#10038;</span></span></div>
+</footer>
+<script src="<%= request.getContextPath() %>/app.js" defer></script>
+<script src="<%= request.getContextPath() %>/site.js" defer></script>
