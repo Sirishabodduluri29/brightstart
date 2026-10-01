@@ -14,7 +14,7 @@
 .extra-pages .story { display: grid; grid-template-columns: 1fr 1.3fr; gap: 65px; padding: 40px 0 65px; border-top: 1px solid var(--line); }
 .extra-pages .process { padding-left: 22px; color: var(--muted); }
 .extra-pages .process li { margin-bottom: 20px; padding-left: 8px; }
-.extra-pages .cta { background: var(--lime); border-radius: 18px; padding: 45px 25px; text-align: center; margin-top: 20px; }
+.extra-pages .cta { background: var(--lime); border-radius: 18px; padding: 45px 25px; text-align: center; margin: 20px 0 0; }
 .extra-pages .filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
 .extra-pages .filters button { border: 1px solid var(--line); background: transparent; border-radius: 30px; padding: 10px 20px; color: var(--ink); font-size: 14px; }
 .extra-pages .filters button[aria-pressed="true"] { background: var(--ink); color: white; }
