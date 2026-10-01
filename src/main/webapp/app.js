@@ -27,6 +27,9 @@ if (menuToggle && navigation) {
   document.addEventListener('click', event => {
     if (!navigation.contains(event.target) && !menuToggle.contains(event.target)) closeMenu();
   });
+  window.matchMedia('(min-width: 761px)').addEventListener('change', event => {
+    if (event.matches) closeMenu();
+  });
 }
 
 const message = document.querySelector('#message');
