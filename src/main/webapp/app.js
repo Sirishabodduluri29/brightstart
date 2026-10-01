@@ -31,9 +31,20 @@ if (menuToggle && navigation) {
 
 const message = document.querySelector('#message');
 const counter = document.querySelector('#message-count');
-if (message && counter) {
+const messageStatus = document.querySelector('#message-status');
+if (message && counter && messageStatus) {
+  let minimumMet = null;
   const updateCounter = () => {
-    counter.textContent = `${message.value.length.toLocaleString()} / 2,000`;
+    const length = message.value.length;
+    const meetsMinimum = length >= message.minLength;
+    counter.textContent = `${length.toLocaleString()} / ${message.maxLength.toLocaleString()}`;
+    if (minimumMet !== meetsMinimum) {
+      messageStatus.textContent = meetsMinimum
+        ? 'Minimum length met.'
+        : `At least ${message.minLength} characters are required.`;
+      messageStatus.classList.toggle('is-valid', meetsMinimum);
+      minimumMet = meetsMinimum;
+    }
   };
   message.addEventListener('input', updateCounter);
   updateCounter();

@@ -161,6 +161,8 @@ input::placeholder, textarea::placeholder { color: #87917f; }
 input:focus, select:focus, textarea:focus { outline: 2px solid #8ca761; outline-offset: 2px; }
 [aria-invalid="true"] { border-color: #b75242; }
 .field-hint { display: flex; justify-content: space-between; gap: 15px; margin-top: 7px; color: var(--muted); font-size: 10px; }
+.message-status { min-height: 1.5em; margin: 6px 0 0; font-size: 11px; color: var(--muted); }
+.message-status.is-valid { color: #517434; }
 .field-error { margin: 6px 0 0; font-size: 12px; color: #994332; }
 .demo-note { background: #f2f4eb; border-radius: 6px; padding: 12px; font-size: 11px; margin-bottom: 20px; }
 .notice { border-radius: 8px; padding: 17px; margin-top: 20px; font-size: 13px; }
