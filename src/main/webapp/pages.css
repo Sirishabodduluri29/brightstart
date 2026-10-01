@@ -33,9 +33,11 @@
 .extra-pages .price span { display: block; font-size: 12px; font-weight: 400; letter-spacing: 0; color: var(--muted); }
 .extra-pages .featured { background: #eef3df; border: 2px solid #87a754; }
 .extra-pages .badge { font-size: 9px; letter-spacing: 1px; background: var(--ink); color: white; padding: 6px 12px; border-radius: 12px; align-self: flex-start; margin-bottom: 20px; }
-.extra-pages .faq-section { max-width: 820px; margin: 0 auto 60px; }
+.extra-pages .faq-section { max-width: 820px; margin: 0 auto 60px; padding: clamp(20px, 3vw, 32px); border-radius: 8px; }
 .extra-pages label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 8px; }
 .extra-pages input { width: 100%; border: 1px solid #bdcabb; background: var(--white); color: var(--ink); padding: 12px 14px; border-radius: 6px; }
+.extra-pages .faq-section label[for="faq-search"] { padding: 10px 14px; margin-bottom: 0; background: #e8f1d5; border: 1px solid #bdcabb; border-bottom: 0; border-radius: 6px 6px 0 0; }
+.extra-pages .faq-section input[type="search"] { padding: 14px 16px; border-radius: 0 0 6px 6px; }
 .extra-pages input:focus-visible { outline: 3px solid #678a37; outline-offset: 3px; }
 .extra-pages details { border-bottom: 1px solid var(--line); padding: 22px 0; }
 .extra-pages summary { cursor: pointer; font-size: 18px; font-weight: 700; }

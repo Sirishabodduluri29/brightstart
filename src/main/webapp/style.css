@@ -13,7 +13,7 @@ h1 { font-size: clamp(40px, 4.8vw, 67px); line-height: 1.08; letter-spacing: -3p
 h2 { font-size: clamp(29px, 3.1vw, 43px); line-height: 1.18; letter-spacing: -1.7px; }
 h3 { font-size: 21px; line-height: 1.35; letter-spacing: -.5px; }
 ::selection { background: var(--lime); color: var(--ink); }
-.container { width: min(1160px, calc(100% - 80px)); margin: 0 auto; }
+.container { width: min(1160px, calc(100% - clamp(36px, 7.8vw, 80px))); margin-inline: auto; }
 .skip-link { position: absolute; top: -100px; left: 20px; background: var(--ink); color: white; padding: 12px 20px; z-index: 10; }
 .skip-link:focus { top: 10px; }
 .site-header { border-bottom: 1px solid var(--line); background: var(--paper); }
@@ -118,6 +118,7 @@ h3 { font-size: 21px; line-height: 1.35; letter-spacing: -.5px; }
 .page-heading { padding: 75px 0 55px; }
 .page-heading h1 { margin-bottom: 27px; }
 .page-heading .intro { max-width: 580px; }
+.story { display: grid; grid-template-columns: 1fr 1.3fr; gap: 65px; padding: 40px 0 65px; border-top: 1px solid var(--line); }
 .story-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 75px; align-items: center; padding-block: 20px 30px; }
 .story-art { border-radius: 18px; background: #e6ecd9; padding: 40px; position: relative; overflow: hidden; min-height: 390px; display: flex; justify-content: center; flex-direction: column; }
 .story-art > p { position: relative; color: var(--ink); font-size: 37px; line-height: 1.3; font-weight: 700; letter-spacing: -1.5px; z-index: 1; }
@@ -167,7 +168,6 @@ input:focus, select:focus, textarea:focus { outline: 2px solid #8ca761; outline-
 .notice-error { background: #fff0e9; border: 1px solid #e8c4b5; color: #8b3d30; }
 .notice:focus { outline: 2px solid currentColor; outline-offset: 3px; }
 @media (max-width: 1020px) {
-  .container { width: min(1160px, calc(100% - 48px)); }
   .hero { gap: 30px; padding-block: 65px; }
   .hero-art { height: 350px; } .floating-note { right: -8px; bottom: 35px; }
   .hero h1 { font-size: 49px; } .hero .eyebrow { font-size: 8px; }
@@ -175,7 +175,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid #8ca761; outline-
   .service-card { padding: 23px; } .work-art { padding: 22px; height: 260px; }
   .work-art > strong { font-size: 27px; } .plant-art { right: 0; }
   .contact-layout { gap: 35px; } .form-card { padding: 28px; }
-  .story-grid { gap: 40px; } .faq-layout { gap: 40px; }
+  .story { gap: 40px; } .story-grid { gap: 40px; } .faq-layout { gap: 40px; }
 }
 @media (max-width: 760px) {
   .header-inner { flex-wrap: wrap; gap: 0; min-height: 80px; padding-block: 20px; }
@@ -187,6 +187,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid #8ca761; outline-
   .has-menu .main-nav.is-open { display: flex; }
   .hero, .story-grid, .contact-layout, .faq-layout { grid-template-columns: 1fr; }
   .hero { padding-block: 45px 55px; gap: 50px; }
+  .story { grid-template-columns: 1fr; gap: 24px; }
   .hero h1 { font-size: clamp(40px, 8vw, 57px); }
   .hero-art { max-width: 490px; width: 100%; justify-self: center; height: 375px; }
   .hero-note { margin-top: 28px; } .intro { font-size: 15px; }
@@ -215,7 +216,6 @@ input:focus, select:focus, textarea:focus { outline: 2px solid #8ca761; outline-
   .expect-card { margin-top: 0; padding: 22px; } .aside-note { grid-column: 1 / -1; margin: 0; }
 }
 @media (max-width: 480px) {
-  .container { width: calc(100% - 36px); }
   h1 { letter-spacing: -2px; } .hero h1 { font-size: 39px; }
   .hero .eyebrow { letter-spacing: 1.3px; } .actions { gap: 20px; }
   .hero-art { height: 320px; } .mock-window { width: 90%; }
